@@ -5,38 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Portfolio Cecilia</title>
 </head>
 
 <body>
     <header>
+        <!-- # deve ser mudado para o link -->
         <ul>
-            <a>Sobre mim</a>
-            <a>Projetos</a>
-            <a>Git Hub</a>
+            <li><a href="#sobre_mim">About me</a></li>
+            <li><a href="#projetos">Projects</a></li>
+            <li><a href="#">Git Hub</a></li>
         </ul>
+
     </header>
-    
+
     <main>
         <section class="info">
-            <h1>Hi, I'm Maria Cecilia</h1>
+            <div class="cecilia_info">
+                <div class="cecilia">
+                    <h1>Hi, I'm <a href="#">Maria Cecilia</a>!</h1>
+                    <span>but you can also call me “Ceci”</span>
+                </div>
+
+                <p>I’m a <b>beginner developer</b>, learning more and more each day</p>
+            </div>
+
             <img src="./img_projects/cecilia.jpg" alt="foto cecilia dev">
         </section>
 
-        <section class="projetos">
+        <section class="sobre_mim" id="sobre_mim">
+            <div class="minhas_infos">
+                <h2>About Me</h2>
+
+                <p>Born in 2005, I've always enjoyed learning and facing challenges. I started studying systems
+                    development in 2025, sparking an interest I never even dreamed of having. My career is just
+                    beginning, but I'm sure it will be promising.
+
+                    Outside of the coding world, I love books, cats, and art.</p>
+            </div>
+            
+
+        </section>
+
+        <!-- <section class="projetos" id="projetos">
             <h2>Meus projetos</h2>
             <div class="info_projetos">
-                <div>
-                    <img src="./img_projects/busca_dog.png" alt="busca dog">
-                </div>
-                <div>
-                    <img src="./img_projects/find_my_movie.png" alt="find my movie">
-                </div>
-                <div>
-                    <img src="./img_projects/site_produtos.png" alt="produtos">
-                </div>
+              <div><img src="./img_projects/busca_dog.png" alt="busca dog"></div>
+              <div><img src="./img_projects/find_my_movie.png" alt="find my movie"></div>
+              <div><img src="./img_projects/site_produtos.png" alt="produtos"></div>
             </div>
-        </section>
+          </section> -->
 
     </main>
 </body>

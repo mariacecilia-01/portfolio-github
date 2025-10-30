@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-/* BAIXAR FONTE DO GOOGLE FONTS PARA H1 */
-
-:root{
+:root {
     --darkpink: #fe495f;
     --pink: #fe9d97;
     --yellow: #fffec8;
@@ -14,36 +12,149 @@
     --darkgreen: #bded7e;
 }
 
-body{
+body {
     background-color: var(--darkgreen);
+    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-header{
-    width: 100%;
-    justify-content: center;
-}
-
-ul{
-    list-style: none;
+header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 12px;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 200px;
+    font-size: 25px;
+
+}
+
+li {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    padding: 0.3em 0.2em;
+    /* espaço interno para o efeito */
+    transition: color 0.3s ease;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) scaleX(0);
     width: 100%;
-    gap: 6rem;
-    margin: 1rem;
+    height: 100%;
+    background-color: var(--yellow);
+    border-radius: 6px;
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform-origin: center;
+}
+
+a:hover::before {
+    transform: translateY(-50%) scaleX(1);
+}
+
+a:hover {
+    color: var(--darkpink)
 }
 
 .info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 4rem;
     align-items: center;
-    padding: 2rem;
-    column-gap: 0rem;
+    justify-items: center;
+    padding: 3rem 5vw;
+    max-width: 1200px;
+    margin: 12px auto;
 }
 
-.info img{
+.info h1 {
+    font-size: 2.7rem;
+    color: #ffffff;
+    margin-right: 1rem;
+}
+
+.info h1 a {
+    font-weight: inherit;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 a:hover {
+    color: var(--darkpink)
+}
+
+.cecilia_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.cecilia {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+}
+
+span {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+p {
+    font-size: 30px;
+    text-align: start;
+    font-style: italic;
+    font-weight: 400;
+}
+
+b{
+    color: var(--darkpink);
+    background-color: var(--yellow);
+}
+
+.info img {
     width: 100%;
     max-width: 400px;
+    height: auto;
     border-radius: 50px;
-    justify-self: center;
+    box-shadow: 16px 16px 7px var(--pink);
+}
+
+section {
+    padding: 5rem 0; /* 6rem em cima e embaixo */
+  }
+
+.minhas_infos{
+    background-color: #d8fd94;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.sobre_mim h2{
+    display: flex;
+    color: var(--darkpink);
+    font-weight: 700;
+    font-size: 50px;
+    justify-content: center;
+
 }
