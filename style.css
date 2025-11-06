@@ -148,13 +148,79 @@ section {
     margin: 20px;
     border-radius: 16px;
     padding: 20px;
+
 }
 
-.sobre_mim h2{
+.sobre_mim h2, .projetos h2{
     display: flex;
     color: var(--darkpink);
-    font-weight: 700;
+    font-weight: 800;
     font-size: 50px;
     justify-content: center;
-
+    padding: 20px;
 }
+
+.sobre_mim p{
+    font-style: normal;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+.icons img{
+    height: 150px;
+    width: auto;
+    transition: transform 0.3s ease; 
+}
+
+.icons img:hover{
+    transform: scale(1.2);
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--green);
+    padding: 18px;
+    border-radius: 16px;
+}
+
+.info_projetos img{
+    width: 76rem;
+    height: auto;
+    margin: 0 auto; 
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+
+.info_projetos img:hover{
+    transform: scale(0.9);
+}
+
+.info_projetos div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info_projetos a{
+    font-size: 2.5rem;
+    font-weight: 700;
+    justify-content: center;
+}
+
